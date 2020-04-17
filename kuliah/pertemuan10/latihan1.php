@@ -10,7 +10,7 @@ $result = mysqli_query($conn, "SELECT * FROM mahasiswa");
 //$row = mysqli_fetch_assoc($result); // array associativer
 //$row = mysqli_fetch_array($result); // keduanya
 
-while ($row = mysqli_fetch_assoc$result)) {
+while ($row = mysqli_fetch_assoc($result)) {
   echo 
 }
 
