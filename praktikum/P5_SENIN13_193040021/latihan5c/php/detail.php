@@ -51,7 +51,7 @@
             <p><?=$e["stok"]; ?></p>
             <p><?=$e["harga"]; ?></p>
         </div>
-        <button class="tombol-kembali"><a href="../index.php">Kembali</button>
+        <button class="tombol-kembali"><a href="index.php">Kembali</button>
     </div>
 </body>
 </html>
