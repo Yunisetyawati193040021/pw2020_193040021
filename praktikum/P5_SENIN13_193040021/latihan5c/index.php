@@ -11,7 +11,7 @@
 
     <style>
         .container {
-            width : 300px;
+            width : 250px;
             height: 520px;
             margin : auto;
             border : 50px solid	#845539; 
