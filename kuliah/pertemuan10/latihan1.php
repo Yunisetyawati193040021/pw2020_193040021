@@ -10,12 +10,14 @@ $result = mysqli_query($conn, "SELECT * FROM mahasiswa");
 //$row = mysqli_fetch_assoc($result); // array associativer
 //$row = mysqli_fetch_array($result); // keduanya
 
-while ($row = mysqli_fetch_assoc($result))
+while ($row = mysqli_fetch_assoc($result)) {
+  $rows[] = $row;
+}
 
 
 // tampung ke variabel mahasiswa
-
- ?>
+$mahasiswa = $rows;
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -39,17 +41,21 @@ while ($row = mysqli_fetch_assoc($result))
       <th>Jurusan</th>
       <th>Aksi</th>
     </tr>
-    <tr>
-      <td>1</td>
-      <td><img src="img/yuni.JPG" width="60"></td>
-      <td>193040021</td>
-      <td>Yuni Setyawati</td>
-      <td>yunisetyawati@gmail.com</td>
-      <td>Teknik Informatika</td>
-      <td>
-        <a href="">ubah</a> | <a href="">hapus</a>
-      </td>
-    </tr>
+
+    <?php $i = 1;
+    foreach ($mahasiswa as $m) : ?>
+      <tr>
+        <td><?= $i++; ?></td>
+        <td><img src="img/<?= $m['gambar']; ?>" width="60"></td>
+        <td><?= $m['nrp']; ?></td>
+        <td><?= $m['nama']; ?></td>
+        <td><?= $m['email']; ?></td>
+        <td><?= $m['jurusan']; ?></td>
+        <td>
+          <a href="">ubah</a> | <a href="">hapus</a>
+        </td>
+      </tr>
+    <?php endforeach; ?>
   </table>
 </body>
 
