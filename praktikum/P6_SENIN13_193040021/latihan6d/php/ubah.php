@@ -1,9 +1,6 @@
 <?php 
 require 'functions.php';
 
-$id = $_GET['id'];
-$e = query("SELECT * FROM elektronik WHERE id = $id")[0];
-
 if (isset($_POST['ubah'])) {
   if (ubah($_POST) > 0) {
     echo "<script>

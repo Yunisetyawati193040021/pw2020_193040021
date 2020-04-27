@@ -28,10 +28,10 @@ function tambah($data) {
 
     $query = "INSERT INTO elektronik
                     VALUES
-                    ('', '$nama', '$warna','$stok','$harga','$foto')";
+                    (null, '$nama', '$warna','$stok','$harga','$foto')";
     
     mysqli_query($conn, $query);
-
+    echo mysqli_error($conn);
     return mysqli_affected_rows($conn);
 }
 
