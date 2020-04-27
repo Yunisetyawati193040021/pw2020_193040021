@@ -16,7 +16,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>detail 5c</title>
+    <title>detail 6c</title>
     <style>
         .container {
             width : 300px;
