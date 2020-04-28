@@ -1,6 +1,9 @@
 <?php 
 require 'functions.php';
 
+$id = $_GET['id'];
+$e = query("SELECT * FROM elektronik WHERE id = $id");
+
 if (isset($_POST['ubah'])) {
   if (ubah($_POST) > 0) {
     echo "<script>
@@ -15,7 +18,6 @@ if (isset($_POST['ubah'])) {
   }
 }
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 
