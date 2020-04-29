@@ -17,17 +17,13 @@ $barang = query("SELECT * FROM elektronik");
     }
 
     img {
-      height: 130px;
-
-    }
-
-    table {
-      text-align: center;
+      height: 140px;
+      border:2px solid orangered;
     }
 
     button {
-      background: white;
-      color: red;
+      background: orangered;
+      color: white;
       font-size: 13px;
     }
 
