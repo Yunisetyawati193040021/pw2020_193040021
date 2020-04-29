@@ -54,6 +54,7 @@ if(isset($_POST['cari'])) {
           <a href="detail.php?id=<?= $m['id']; ?>">lihat detail</a>
         </td>
       </tr>
+    <?php $i++; ?>
     <?php endforeach; ?>
   </table>
 </body>
