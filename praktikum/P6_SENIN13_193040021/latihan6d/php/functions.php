@@ -6,12 +6,12 @@ function koneksi() {
     return $conn;
 }
 
-function query($sql){
+function query($sql) {
     $conn = koneksi();
     $result = mysqli_query($conn, "$sql");
 
     $rows = [];
-    while ($row = mysqli_fetch_assoc($result)){
+    while ($row = mysqli_fetch_assoc($result)) {
         $rows[] = $row;
     }
     return $rows;
@@ -28,10 +28,10 @@ function tambah($data) {
 
     $query = "INSERT INTO elektronik
                     VALUES
-                    (null, '$nama', '$warna','$stok','$harga','$foto')";
+                    ('', '$nama', '$warna','$stok','$harga','$foto')";
     
     mysqli_query($conn, $query);
-    echo mysqli_error($conn);
+
     return mysqli_affected_rows($conn);
 }
 

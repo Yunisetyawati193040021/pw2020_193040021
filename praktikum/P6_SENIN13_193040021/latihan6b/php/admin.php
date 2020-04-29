@@ -24,6 +24,12 @@ $barang = query("SELECT * FROM elektronik");
     table {
       text-align: center;
     }
+
+    button {
+      background: red;
+      color: white;
+      font-size: 13px;
+    }
   </style>
 </head>
 

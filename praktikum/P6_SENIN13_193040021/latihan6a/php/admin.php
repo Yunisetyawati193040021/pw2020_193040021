@@ -18,10 +18,17 @@ $barang = query("SELECT * FROM elektronik");
 
     img {
       height: 130px;
-      
+
     }
+
     table {
       text-align: center;
+    }
+
+    button {
+      background: red;
+      color: white;
+      font-size: 13px;
     }
   </style>
 </head>
@@ -43,7 +50,7 @@ $barang = query("SELECT * FROM elektronik");
         <td><?= $i; ?></td>
         <td>
           <a href=""><button>Ubah</button></a>
-          <a href="hapus"><button>Hapus</button></a>
+          <a href=""><button>Hapus</button></a>
         </td>
         <td><img src="../assets/img/<?= $e['foto']; ?>" </td> <td><?= $e['nama']; ?></td>
         <td><?= $e['warna']; ?></td>

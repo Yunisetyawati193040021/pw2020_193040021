@@ -1,5 +1,9 @@
 <?php
 
+if (!isset($_GET['id'])) {
+    header("location: ../index.php");
+}
+
 require 'functions.php';
 
 $id = $_GET['id'];
@@ -43,16 +47,16 @@ $barang = query("SELECT * FROM elektronik WHERE id = $id")[0];
 
 <body>
     <div class="container">
-            <div class="foto">
-                <ul>
-                    <li><img src="assets/img/<?= $e['foto']; ?>" alt=""></li>
-                    <li>Nama : <?= $e['nama']; ?></li>
-                    <li>Warna : <?= $e['warna']; ?></li>
-                    <li>Stok : <?= $e['stok']; ?></li>
-                    <li>Harga : <?= $e['harga']; ?></li>
-                </ul>
+        <div class="foto">
+            <img src="../assets/img/<?= $e["foto"]; ?>" alt="">
+        </div>
+        <div class="keterangan">
+            <p><?= $e["nama"]; ?></p>
+            <p><?= $e["warna"]; ?></p>
+            <p><?= $e["stok"]; ?></p>
+            <p><?= $e["harga"]; ?></p>
 
-            </div>
+        </div>
         <button class="tombol-kembali"><a href="../index.php">Kembali</button>
     </div>
 </body>

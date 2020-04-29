@@ -2,7 +2,7 @@
 
 require 'php/functions.php';
 
-$barang = query("SELECT * FROM elektronik");
+$elektronik = query("SELECT * FROM elektronik");
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -12,7 +12,7 @@ $barang = query("SELECT * FROM elektronik");
 
     <style>
         .container {
-            width: 250px;
+            width: 300px;
             height: 520px;
             margin: auto;
             border: 50px solid #845539;
@@ -43,10 +43,10 @@ $barang = query("SELECT * FROM elektronik");
         <center>LIST NAMA BARANG</center>
     </h1>
     <div class="container">
-        <?php foreach ($barang as $e) : ?>
+        <?php foreach ($elektronik as $e) : ?>
             <div class="nama">
                 <a href="php/detail.php?id=<?= $e['id'] ?>">
-                <?= $e['nama'] ?>
+                <?= $e["nama"] ?>
                 </a>
             </div>
         <?php endforeach; ?>
