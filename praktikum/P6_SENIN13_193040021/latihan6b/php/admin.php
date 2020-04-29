@@ -13,7 +13,7 @@ $barang = query("SELECT * FROM elektronik");
   <title>Admin</title>
   <style>
     body {
-      background: linear-gradient(to right, #f05053 30%, #e1eec3);
+      background: linear-gradient(to right, #FA8072, #B0C4DE, #FFA07A, #E6E6FA, #FFB6C1);
     }
 
     img {
@@ -26,9 +26,13 @@ $barang = query("SELECT * FROM elektronik");
     }
 
     button {
-      background: red;
-      color: white;
+      background: white;
+      color: red;
       font-size: 13px;
+    }
+
+    th {
+      background: linear-gradient(to right, #FA8072, #B0C4DE, #FFA07A, #E6E6FA, #FFB6C1);
     }
   </style>
 </head>
