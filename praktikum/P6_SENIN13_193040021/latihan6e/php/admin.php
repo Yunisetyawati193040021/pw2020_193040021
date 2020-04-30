@@ -44,11 +44,14 @@ if (isset($_GET['cari'])) {
 </head>
 
 <body>
+  <div class="add">
+    <a href="tambah.php"><button>Tambah Data</button></a>
+  </div>
+  <br>
   <form action="" method="POST">
     <input type="text" name="keyword" size="90" placeholder="masukan keyword pencarian.." autocomplete="off" autofocus>
     <button type="submit" name="cari">Cari!</button>
   </form>
-  <br>
 
   <table border="1" cellpadding="13" cellspacing="1">
     <tr>
@@ -69,9 +72,6 @@ if (isset($_GET['cari'])) {
       </tr>
     <?php endif; ?>
     <?php $i = 1; ?>
-    <div class="add">
-      <a href="tambah.php"><button>Tambah Data</button></a>
-    </div>
     <br>
     <?php foreach ($barang as $e) : ?>
       <tr>
