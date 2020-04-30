@@ -45,8 +45,7 @@ $barang = query("SELECT * FROM elektronik");
       <th>Harga</th>
     </tr>
     <div>
-      <a href="ubah.php?id=<?= $e['id'] ?>" onclick="return confirm('Ubah Data??')">Ubah</a>
-      <a href="hapus.php?id=<?= $e['id'] ?>" onclick="return confirm('Hapus Data??')">Hapus</a>
+      <a href="tambah.php"><button>Tambah Data</button></a>
     </div>
     <?php $i = 1; ?>
     <?php foreach ($barang as $e) : ?>
@@ -54,7 +53,7 @@ $barang = query("SELECT * FROM elektronik");
         <td><?= $i; ?></td>
         <td>
           <a href=""><button>Ubah</button></a>
-          <a href="hapus"><button>Hapus</button></a>
+          <a href="hapus.php?id=<?= $e['id'] ?>" onclick="return confirm('Hapus Data??')"><button>Hapus</button></a>
         </td>
         <td><img src="../assets/img/<?= $e['foto']; ?>" </td> <td><?= $e['nama']; ?></td>
         <td><?= $e['warna']; ?></td>
