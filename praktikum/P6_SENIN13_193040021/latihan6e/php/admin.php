@@ -44,11 +44,17 @@ if (isset($_GET['cari'])) {
 </head>
 
 <body>
-  <form action="" method="get">
+  <form action="" method="POST">
     <input type="text" name="keyword" size="90" placeholder="masukan keyword pencarian.." autocomplete="off" autofocus>
     <button type="submit" name="cari">Cari!</button>
   </form>
   <br>
+
+  <div class="add">
+    <a href="tambah.php"><button>Tambah Data</button></a>
+  </div>
+  <br>
+
   <table border="1" cellpadding="13" cellspacing="1">
     <tr>
       <th>#</th>
@@ -60,16 +66,16 @@ if (isset($_GET['cari'])) {
       <th>Harga</th>
     </tr>
 
-    <?php if (empty($barang))  : ?>
+    <?php if (empty($barang)) : ?>
       <tr>
         <td colspan="7">
           <h1 style="color: red; font-style: italic;">Data tidak ditemukan!</h1>
         </td>
       </tr>
-    <?php endif ; ?>
+    <?php endif; ?>
     <div>
-      <a href="ubah.php?id=<?= $e['id'] ?>" onclick="return confirm('Ubah Data??')">Ubah</a>
-      <a href="hapus.php?id=<?= $e['id'] ?>" onclick="return confirm('Hapus Data??')">Hapus</a>
+      <a href="ubah.php?id=<?= $e['id'] ?>" onclick="return confirm('Ubah Data??')"></a>
+      <a href="hapus.php?id=<?= $e['id'] ?>" onclick="return confirm('Hapus Data??')"></a>
     </div>
     <?php $i = 1; ?>
     <?php foreach ($barang as $e) : ?>
