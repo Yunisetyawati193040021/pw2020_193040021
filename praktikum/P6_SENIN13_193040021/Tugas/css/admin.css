@@ -1,0 +1,18 @@
+body {
+      background: linear-gradient(to right, #FA8072, #B0C4DE, #FFA07A, #E6E6FA, #FFB6C1);
+    }
+
+    img {
+      height: 140px;
+      border: 2px solid orangered;
+    }
+
+    button {
+      background: orangered;
+      color: white;
+      font-size: 13px;
+    }
+
+    th {
+      background: linear-gradient(to right, #FA8072, #B0C4DE, #FFA07A, #E6E6FA, #FFB6C1);
+    }
