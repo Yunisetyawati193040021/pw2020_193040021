@@ -34,15 +34,23 @@ if (isset($_GET['cari'])) {
     <h1>
         <center>LIST NAMA BARANG</center>
     </h1>
-    <form action="" method="POST">
-        <input type="text" name="keyword" size="90" placeholder="masukan keyword pencarian.." autocomplete="off" autofocus>
-        <button type="submit" name="cari">Cari!</button>
-    </form>
+    <nav>
+        <div class="nav-wrapper">
+            <form>
+                <div class="input-field">
+                    <input name="keyword" id="search" type="search" placeholder="masukan keyword pencarian.." required>
+                    <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+                    <button type="menu" name="cari"></button>
+                </div>
+            </form>
+        </div>
+    </nav>
+
     <div class="container">
         <?php if (empty($barang)) : ?>
             <h1 style="color: red; font-style: italic;">Data tidak ditemukan!</h1>
         <?php else : ?>
-        <?php foreach ($barang as $e) : ?>
+            <?php foreach ($barang as $e) : ?>
                 <div class="foto">
                     <a href="php/detail.php?id=<?= $e['id'] ?>">
                         <img src="assets/img/<?= $e["foto"] ?>" class="responsive-img materialboxed" width=500>
@@ -53,7 +61,7 @@ if (isset($_GET['cari'])) {
                         <?= $e["nama"] ?>
                     </a>
                 </div>
-        <?php endforeach; ?>
+            <?php endforeach; ?>
         <?php endif; ?>
     </div>
 </body>
