@@ -1,0 +1,23 @@
+.container {
+            width: 300px;
+            height: 520px;
+            margin: auto;
+            border: 50px solid #845539;
+            background-color: #CC9966;
+            padding: 20px 20px 20px 20px;
+            font-family: arial;
+            font-size: 20px;
+        }
+
+        a:link {
+            color: #000000;
+        }
+
+        a:hover {
+            text-decoration: none;
+            color: #D2691E;
+        }
+
+        a:active {
+            text-decoration: none;
+        }

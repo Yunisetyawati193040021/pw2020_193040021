@@ -1,0 +1,8 @@
+table {
+  background: linear-gradient(to right, #FA8072, #B0C4DE, #FFA07A, #E6E6FA, #FFB6C1);
+}
+button {
+      background: linear-gradient(to right, #FA8072, #B0C4DE, #FFA07A, #E6E6FA, #FFB6C1);;
+      color: black;
+      font-size: 13px;
+    }
