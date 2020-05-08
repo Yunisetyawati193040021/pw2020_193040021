@@ -2,7 +2,7 @@ table {
   background: linear-gradient(to right, #FA8072, #B0C4DE, #FFA07A, #E6E6FA, #FFB6C1);
 }
 button {
-      background: linear-gradient(to right, #FA8072, #B0C4DE, #FFA07A, #E6E6FA, #FFB6C1);;
+      background: linear-gradient(to right, #FA8072, rgb(145, 176, 218), #FFA07A, #E6E6FA, #FFB6C1);;
       color: black;
       font-size: 13px;
     }
