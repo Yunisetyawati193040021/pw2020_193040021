@@ -1,0 +1,68 @@
+body {
+	font:16px,28px Hobo std;
+	background-image: url(alam.jpg);
+	color: black;
+
+}
+
+.container {
+	width: 800px;
+	margin:auto;
+	background-color: orangered;
+	text-align: center;
+}
+
+.header{
+	padding:30px;
+	padding-bottom: 5px;
+}
+
+.header marquee {
+	font-size: 40px;
+	font-weight: bold;
+	align-content: middle;
+}
+
+.header ul li {
+	display: inline-block;
+	margin-top: 20px;
+	margin-right: 10px;
+
+}
+
+.header a {
+	text-decoration: none;
+	color: white;
+	padding: 5px;
+}
+
+.header a:hover {
+	background-color: wheat;
+	color: orangered;
+}
+
+
+.hero {
+	height: 400px;
+	background-image: url(hi.jpg);
+    background-image: cover;
+    background-position: 100px;
+    border-top: 5px solid grey;
+    border-bottom: 5px solid lightgrey;
+}
+
+.content {
+	padding: 5px;
+	font-family: times new roman;
+	text-align: left;
+}
+
+#footer {
+	text-align: center;
+	background-color: whitesmoke;
+	font-family: verdana;
+	color: orangered;
+	width: 800px;
+	height: 60px;
+	margin: 0 auto;
+	padding-top: 10px;
