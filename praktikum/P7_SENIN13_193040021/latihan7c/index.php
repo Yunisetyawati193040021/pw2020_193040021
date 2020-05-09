@@ -62,7 +62,7 @@ if (isset($_GET['cari'])) {
                     </a>
                 </div>
                 <div class="nama">
-                    <a href="php/detail.php?id=<?= $e['id'] ?>">
+                    <a href="php/detail.php?id=<?= $barang['id'] ?>">
                         <?= $e["nama"] ?>
                     </a>
                 </div>

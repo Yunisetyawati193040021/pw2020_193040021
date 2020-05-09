@@ -35,10 +35,10 @@ $barang = query("SELECT * FROM elektronik WHERE id = $id")[0];
             <img src="assets/img/<?= $e["foto"]; ?>" alt="">
         </div>
         <div class="keterangan">
-            <p>Nama : <?= $e["nama"]; ?></p>
-            <p>Warna : <?= $e["warna"]; ?></p>
-            <p>Stok : <?= $e["stok"]; ?></p>
-            <p>Harga : RP.<?= $e["harga"]; ?></p>
+            <p>Nama : <?= $barang["nama"]; ?></p>
+            <p>Warna : <?= $barang["warna"]; ?></p>
+            <p>Stok : <?= $barang["stok"]; ?></p>
+            <p>Harga : RP.<?= $barang["harga"]; ?></p>
         </div>
         <button class="tombol-kembali"><a href="../index.php">Kembali</button>
     </div>
