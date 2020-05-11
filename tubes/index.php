@@ -46,10 +46,18 @@ if (isset($_GET['search'])) {
   </nav>
   <br>
 
-  <center><a href="php/login.php">
+  <center>
+    <a href="php/admin.php">
       <button>Masuk ke halaman admin</button>
-    </a></center>
-  <br>
+    </a>
+    <td>
+      <a href="php/login.php">
+        <button>Login!</button>
+      </a>
+    </td>
+    
+  </center>
+    <br>
 
   <div class="container">
     <?php if (empty($barang)) : ?>

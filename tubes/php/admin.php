@@ -1,11 +1,6 @@
 <?php
 session_start();
 
-if (!isset($_SESSION["username"])) {
-  header("Location: login.php");
-  exit;
-}
-
 require 'functions.php';
 
 // ketika tombol cari diklik
@@ -55,7 +50,7 @@ if (isset($_GET['cari'])) {
 
   <table border="1" cellpadding="13" cellspacing="1">
     <tr>
-      <th>#</th>
+      <th>No.</th>
       <th>Opsi</th>
       <th>Foto</th>
       <th>Nama</th>

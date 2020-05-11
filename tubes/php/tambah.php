@@ -2,7 +2,7 @@
 session_start();
 
 if (!isset($_SESSION["username"])) {
-  header("Location: login.php");
+  header("Location: tambah.php");
   exit;
 }
 
@@ -41,44 +41,62 @@ if (isset($_POST['tambah'])) {
 </head>
 
 <body>
-  <h3>Form Tambah Data</h3>
-  <form action="" method="POST">
-    <ul>
-      <li>
-        <label for="nama">Nama :</label><br>
-        <input type="text" name="nama" id="nama" required><br><br>
-      </li>
-      <li>
-        <label for="warna">Warna :</label><br>
-        <select name="warna" id="warna" required>
-          <option value="">----------- Pilih Warna -----------</option>
-          <option value="Black">Black</option>
-          <option value="White">White</option>
-          <option value="Blue">Blue</option>
-          <option value="Red">Red</option>
-          <option value="Gold">Gold</option>
-          <option value="Blue-Grey">Blue-Grey</option>
-          <option value="Grey">Grey</option>
-          <option value="Lightblue">Lightblue</option>
-          <option value="Dark-Blue">Dark-Blue</option>
-          <option value="Pink-White">Pink-White</option>
-        </select>
-      </li>
-      <li>
-        <label for="stok">Stok :</label><br>
-        <input type="text" name="stok" id="stok" required><br><br>
-      </li>
-      <li>
-        <label for="harga">Harga :</label><br>
-        <input type="text" name="harga" id="harga" required><br><br>
-      </li>
-      <br>
-      <button type="submit" name="tambah">Tambah Data!</button>
-      <button type="submit">
-        <a href="index.php" style="text-decoration: none; color: black;">Kembali</a>
-      </button>
-    </ul>
-  </form>
-</body>
+
+</body class="#f3e5f5 purple lighten-5">
+<div class="container" style=" position: absolute; left: 400px;">
+  <div class="row">
+    <div class="col s10 m7">
+      <div class="card">
+        <div class="card-image">
+          <img src="../assets/img/4.jpg">
+          <span class="card-title">Form Tambah Data</span>
+        </div>
+        <div class="card-content">
+          <form action="" method="POST">
+            <ul>
+              <li>
+                <label for="nama">Nama :</label><br>
+                <input type="text" name="nama" id="nama" required><br><br>
+              </li>
+              <li>
+                <label for="warna">Warna :</label><br><br>
+                <select class="browser-default">
+                  <option value="" disabled selected>Choose color</option>
+                  <option value="Black">Black</option>
+                  <option value="White">White</option>
+                  <option value="Blue">Blue</option>
+                  <option value="Red">Red</option>
+                  <option value="Gold">Gold</option>
+                  <option value="Blue-Grey">Blue-Grey</option>
+                  <option value="Grey">Grey</option>
+                  <option value="Lightblue">Lightblue</option>
+                  <option value="Dark-Blue">Dark-Blue</option>
+                  <option value="Pink-White">Pink-White</option>
+
+                </select>
+              </li>
+              <br>
+              <li>
+                <label for="stok">Stok :</label><br>
+                <input type="text" name="stok" id="stok" required><br><br>
+              </li>
+              <li>
+                <label for="harga">Harga :</label><br>
+                <input type="text" name="harga" id="harga" required><br><br>
+              </li>
+            </ul>
+          </form>
+        </div>
+        <div class="card-action">
+          <button type="submit" name="tambah">Tambah Data!</button>
+          <button type="submit">
+            <a href="../index.php" style="text-decoration: none; color: black;">Kembali</a>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
 
 </html>
