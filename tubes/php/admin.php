@@ -32,7 +32,7 @@ if (isset($_GET['cari'])) {
   <title>Admin</title>
 </head>
 
-<body>
+<body style="background: linear-gradient(to right, #FA8072, #B0C4DE, #FFA07A, #E6E6FA, #FFB6C1);">
   <div class="logout">
     <a href="logout.php"><button>Logout</button></a>
   </div>
